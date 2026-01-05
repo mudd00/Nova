@@ -1,0 +1,20 @@
+{
+  "name": "mini-app-generator",
+  "version": "1.0.0",
+  "description": "AI 미니앱 생성기 - 자연어로 미니앱을 생성하는 플랫폼",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\"",
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "install:all": "npm install && cd client && npm install && cd ../server && npm install"
+  },
+  "keywords": ["ai", "code-generator", "mini-app", "react", "express"],
+  "author": "bryce",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
